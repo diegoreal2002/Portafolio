@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/* Button on click come to the top page */
 #up-button{
     position: fixed;
     bottom: 0;
@@ -9,6 +10,10 @@
 }
 #up-button:hover{
     color: black;
+}
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 header{
     display: flex;
@@ -37,15 +42,15 @@ nav{
     right: 0;
     transition: all .4s;
 }
+#nav-checkbox:checked + #nav-list{
+    top: 76px;
+}
 #header-list{
     list-style: none;
     padding: 5px 10px;
 }
 #nav-checkbox{
     display: none;
-}
-#nav-checkbox:checked + #nav-list{
-    top: 76px;
 }
 #header-list li{
     margin: 10px 0;
@@ -69,7 +74,10 @@ main{
 #introduction-title{
     margin: 0;
     padding: 30px 0;
-    font-weight: 200;
+    font-weight: lighter;
+}
+#introduction-title:hover{
+    text-decoration: underline;
 }
 #main-technologies{
     margin: 0 50px;
@@ -98,10 +106,105 @@ main{
 #container-technologies i{
     font-size: 7em;
 }
-#main-studies img{
-    object-fit: scale-down;
+#container-studies{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
 }
+#container-studies > a{
+    width: 250px;
+    height: 290px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+}
+#container-studies > a:hover{
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+}
+
+#main-studies{
+    margin: 20px 50px;
+}
+.card-studie{
+    border: 2px solid gray;
+}
+.title-studie{
+    font-size: 1.2em;
+}
+
+#main-experience{
+    margin: 20px 50px;
+}
+#table-xp{
+    margin: 50px 0!important;
+}
+#table-xp,td,th{
+    border-collapse: collapse;
+    padding: 5px;
+    border: 1px solid black;
+    margin: auto;
+}
+#main-projects{
+    margin: 20px 50px;
+}
+footer{
+    padding: 20px;
+    background-color: rgb(40, 40, 40);
+}
+/* On mouse hover icons */
+
+#icon-html:hover{
+    color: rgb(233,98,39);
+    cursor: pointer;
+}
+
+#icon-css:hover{
+    color: rgb(37,75,221);
+    cursor: pointer;
+}
+
+#icon-js:hover{
+    color: rgb(247,217,1);
+    cursor: pointer;
+}
+
+#icon-boots:hover{
+    color: rgb(119,19,240);
+    cursor: pointer;
+}
+
+#icon-php:hover{
+    color: rgb(77,88,142);
+    cursor: pointer;
+}
+
+#icon-git:hover{
+    color: rgb(26,30,34);
+    cursor: pointer;
+}
+
+#icon-wordp:hover{
+    color: rgb(32,113,150);
+    cursor: pointer;
+}
+
+#icon-react:hover{
+    color: rgb(9,208,243);
+    cursor: pointer;
+}
+
+#icon-node:hover{
+    color: rgb(107,161,93);
+    cursor: pointer;
+}
+/* Tablets */
 @media (min-width: 400px) {
+
     #main-introduction{
         width: 40%;
     }
@@ -112,5 +215,34 @@ main{
     }
     #container-technologies > div{
         margin: 20px 50px;
+    }
+    #container-studies{
+        flex-direction: row;
+        justify-content: center;
+    }
+    #container-studies > a{
+        margin: 10px;
+    }
+}
+
+
+/* Desktops */
+@media (min-width: 900px) {
+    #container-studies > a{
+        width: 310px;
+    }
+    .img-r{
+        width: 300px;
+    }
+    #nav-list{
+        width: 25%;
+        top: -500px;
+    }
+    #nav-checkbox:checked + #nav-list{
+        right: 0;
+    }
+    #table-xp{
+        width: 80%;
+        margin: 50px auto!important;
     }
 }
