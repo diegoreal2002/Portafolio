@@ -63,9 +63,6 @@ nav{
 #header-list a:hover{
     text-decoration: underline;
 }
-main{
-    
-}
 #main-introduction{
     margin: auto;
     font-size: 2.3em;
@@ -80,7 +77,7 @@ main{
     text-decoration: underline;
 }
 #main-technologies{
-    margin: 0 50px;
+    margin: 0 10px;
 }
 #technologies-title{
     font-size: 2.9em;
@@ -128,7 +125,7 @@ main{
 }
 
 #main-studies{
-    margin: 20px 50px;
+    margin: 20px 10px;
 }
 .card-studie{
     border: 2px solid gray;
@@ -138,7 +135,7 @@ main{
 }
 
 #main-experience{
-    margin: 20px 50px;
+    margin: 20px 10px;
 }
 #table-xp{
     margin: 50px 0!important;
@@ -150,7 +147,7 @@ main{
     margin: auto;
 }
 #main-projects{
-    margin: 20px 50px;
+    margin: 20px 10px;
 }
 footer{
     padding: 20px;
@@ -244,5 +241,14 @@ footer{
     #table-xp{
         width: 80%;
         margin: 50px auto!important;
+    }
+    #main-technologies{
+        margin: 0 50px;
+    }
+    #main-studies{
+        margin: 20px 50px;
+    }
+    #main-projects{
+        margin: 20px 50px;
     }
 }
