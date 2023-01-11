@@ -122,6 +122,7 @@ nav{
 }
 #container-studies > a:hover{
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+    transform: scale(1.01,1.01);
 }
 
 #main-studies{
@@ -152,6 +153,16 @@ nav{
 footer{
     padding: 20px;
     background-color: rgb(40, 40, 40);
+}
+
+#title-soon{
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    padding: 10px;
+    text-align: center;
 }
 /* On mouse hover icons */
 
@@ -246,6 +257,9 @@ footer{
         margin: 0 50px;
     }
     #main-studies{
+        margin: 20px 50px;
+    }
+    #main-experience{
         margin: 20px 50px;
     }
     #main-projects{
