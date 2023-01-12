@@ -24,7 +24,7 @@ header{
 }
 #header-title{
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 #nav-icon{
     font-size: 3em;
@@ -43,7 +43,7 @@ nav{
     transition: all .4s;
 }
 #nav-checkbox:checked + #nav-list{
-    top: 76px;
+    top: 70px;
 }
 #header-list{
     list-style: none;
@@ -69,6 +69,7 @@ nav{
     text-align: center;
 }
 #introduction-title{
+    font-size: 1.3em;
     margin: 0;
     padding: 30px 0;
     font-weight: lighter;
@@ -85,11 +86,10 @@ nav{
 }
 #down-icon{
     font-size: 3em;
-    transition: all 1s;
+    transition: all .5s;
 }
 #down-icon:hover{
-    position: relative;
-    top: 10px;
+    transform: translateY(10px);
 } 
 #container-technologies{
     display: flex;
@@ -165,61 +165,93 @@ footer{
     text-align: center;
 }
 /* On mouse hover icons */
-
+#icon-html{
+    transition: all .5s;
+}
 #icon-html:hover{
     color: rgb(233,98,39);
     cursor: pointer;
+    transform: translateY(5px);
 }
-
+#icon-css{
+    transition: all .5s;
+}
 #icon-css:hover{
     color: rgb(37,75,221);
     cursor: pointer;
+    transform: translateY(5px);
 }
-
+#icon-js{
+    transition: all .5s;
+}
 #icon-js:hover{
     color: rgb(247,217,1);
     cursor: pointer;
+    transform: translateY(5px);
 }
-
+#icon-boots{
+    transition: all .5s;
+}
 #icon-boots:hover{
     color: rgb(119,19,240);
     cursor: pointer;
+    transform: translateY(5px);
 }
-
+#icon-php{
+    transition: all .5s;
+}
 #icon-php:hover{
     color: rgb(77,88,142);
     cursor: pointer;
+    transform: translateY(5px);
 }
-
+#icon-git{
+    transition: all .5s;
+}
 #icon-git:hover{
     color: rgb(26,30,34);
     cursor: pointer;
+    transform: translateY(5px);
 }
-
+#icon-wordp{
+    transition: all .5s;
+}
 #icon-wordp:hover{
     color: rgb(32,113,150);
     cursor: pointer;
+    transform: translateY(5px);
 }
-
+#icon-react{
+    transition: all .5s;
+}
 #icon-react:hover{
     color: rgb(9,208,243);
     cursor: pointer;
+    transform: translateY(5px);
 }
-
+#icon-node{
+    transition: all .5s;
+}
 #icon-node:hover{
     color: rgb(107,161,93);
     cursor: pointer;
+    transform: translateY(5px);
 }
 /* Tablets */
 @media (min-width: 400px) {
-
+    #header-title{
+        font-size: 3em;
+    }
     #main-introduction{
-        width: 40%;
+        width: 80%;
     }
     #container-technologies{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    #nav-checkbox:checked + #nav-list{
+        top: 76px;
     }
     #container-technologies > div{
         margin: 20px 50px;
@@ -236,6 +268,9 @@ footer{
 
 /* Desktops */
 @media (min-width: 900px) {
+    #main-introduction{
+        width: 40%;
+    }
     #container-studies > a{
         width: 310px;
     }
