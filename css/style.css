@@ -1,303 +1,50 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-/* Button on click come to the top page */
-#up-button{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    font-size: 2em;
-    color: rgb(40, 40, 40);
-    padding: 10px;
-}
-#up-button:hover{
-    color: black;
-}
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 10px;
-    border-bottom: 2px solid black;
-}
-#header-title{
-    margin: 0;
-    font-size: 2.5em;
-}
-#nav-icon{
-    font-size: 3em;
-}
-#nav-icon:hover{
-    cursor: pointer;
-}
-nav{
-    background-color: rgb(40, 40, 40);
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    top: -600px;
-    right: 0;
-    transition: all .4s;
-}
-#nav-checkbox:checked + #nav-list{
-    top: 70px;
-}
-#header-list{
-    list-style: none;
-    padding: 5px 10px;
-}
-#nav-checkbox{
-    display: none;
-}
-#header-list li{
-    margin: 10px 0;
-}
-#header-list a{
-    text-decoration: none;
-    font-size: 2.3em;
-    color: white;
-}
-#header-list a:hover{
-    text-decoration: underline;
-}
-#main-introduction{
-    margin: auto;
-    font-size: 2.3em;
-    text-align: center;
-}
-#introduction-title{
-    font-size: 1.3em;
-    margin: 0;
-    padding: 30px 0;
-    font-weight: lighter;
-}
-#introduction-title:hover{
-    text-decoration: underline;
-}
-#main-technologies{
-    margin: 0 10px;
-}
-#technologies-title{
-    font-size: 2.9em;
-    margin: 20px 0;
-}
-#down-icon{
-    font-size: 3em;
-    transition: all .5s;
-}
-#down-icon:hover{
-    transform: translateY(10px);
-} 
-#container-technologies{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-}
-#container-technologies > div{
-    margin: 10px 0;
-}
-#container-technologies i{
-    font-size: 7em;
-}
-#container-studies{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-#container-studies > a{
-    width: 250px;
-    height: 290px;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    transition: all .5s;
-}
-#container-studies > a:hover{
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
-    transform: scale(1.01,1.01);
+body{
+    padding: 0 20px;
 }
 
-#main-studies{
-    margin: 20px 10px;
+#header-subtitle{
+    font-weight: 100;
 }
-.card-studie{
-    border: 2px solid gray;
+#main-container{
+    display: flex;
+    flex-direction: column;
 }
-.title-studie{
-    font-size: 1.2em;
+hr{
+    border: .2px solid black;
 }
-
-#main-experience{
-    margin: 20px 10px;
+.tab{
+    padding-left: 15px;
 }
-#table-xp{
-    margin: 50px 0!important;
+.div-exp{
+    margin-bottom: 30px;
 }
-#table-xp,td,th{
-    border-collapse: collapse;
-    padding: 5px;
-    border: 1px solid black;
-    margin: auto;
-}
-#main-projects{
-    margin: 20px 10px;
+.exp-sub{
+    display: inline-block;
+    font-weight: 300;
+    margin-top: 0;
 }
 footer{
-    padding: 20px;
-    background-color: rgb(40, 40, 40);
-}
-
-#title-soon{
-    font-size: 80px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    padding: 10px;
+    margin-top: 20px;
     text-align: center;
+    border-top: 1px solid gray;
 }
-/* On mouse hover icons */
-#icon-html{
-    transition: all .5s;
-}
-#icon-html:hover{
-    color: rgb(233,98,39);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-#icon-css{
-    transition: all .5s;
-}
-#icon-css:hover{
-    color: rgb(37,75,221);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-#icon-js{
-    transition: all .5s;
-}
-#icon-js:hover{
-    color: rgb(247,217,1);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-#icon-boots{
-    transition: all .5s;
-}
-#icon-boots:hover{
-    color: rgb(119,19,240);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-#icon-php{
-    transition: all .5s;
-}
-#icon-php:hover{
-    color: rgb(77,88,142);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-#icon-git{
-    transition: all .5s;
-}
-#icon-git:hover{
-    color: rgb(26,30,34);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-#icon-wordp{
-    transition: all .5s;
-}
-#icon-wordp:hover{
-    color: rgb(32,113,150);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-#icon-react{
-    transition: all .5s;
-}
-#icon-react:hover{
-    color: rgb(9,208,243);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-#icon-node{
-    transition: all .5s;
-}
-#icon-node:hover{
-    color: rgb(107,161,93);
-    cursor: pointer;
-    transform: translateY(5px);
-}
-/* Tablets */
-@media (min-width: 400px) {
-    #header-title{
-        font-size: 3em;
-    }
-    #main-introduction{
-        width: 80%;
-    }
-    #container-technologies{
+@media (min-width: 1024px){
+    #main-container{
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
     }
-    #nav-checkbox:checked + #nav-list{
-        top: 76px;
+    #main-section{
+        width: 70%;
+        padding: 0 10px;
     }
-    #container-technologies > div{
-        margin: 20px 50px;
+    #main-aside{
+        border: 1px solid gray;
+        width: 30%;
+        height: 50vh;
+        padding: 0 10px;
+        position: sticky;
+        top: 10px;
     }
-    #container-studies{
-        flex-direction: row;
-        justify-content: center;
-    }
-    #container-studies > a{
-        margin: 10px;
-    }
-}
-
-
-/* Desktops */
-@media (min-width: 900px) {
-    #main-introduction{
-        width: 40%;
-    }
-    #container-studies > a{
-        width: 310px;
-    }
-    .img-r{
-        width: 300px;
-    }
-    #nav-list{
-        width: 25%;
-        top: -500px;
-    }
-    #nav-checkbox:checked + #nav-list{
-        right: 0;
-    }
-    #table-xp{
-        width: 80%;
-        margin: 50px auto!important;
-    }
-    #main-technologies{
-        margin: 0 50px;
-    }
-    #main-studies{
-        margin: 20px 50px;
-    }
-    #main-experience{
-        margin: 20px 50px;
-    }
-    #main-projects{
-        margin: 20px 50px;
+    .tab{
+        padding-left: 30px;
     }
 }
